@@ -60,7 +60,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('💝✦Jᴏɪɴ Oᴜʀ Mᴏᴠɪᴇs Gʀᴏᴜᴘ✦', url='@Move_Download')
+            InlineKeyboardButton('💝✦Jᴏɪɴ Oᴜʀ Mᴏᴠɪᴇs Gʀᴏᴜᴘ✦', url='https://t.me/Move_Download')
             ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/UniformHelp'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/UniformHelp')
@@ -94,7 +94,7 @@ async def start(client, message):
         token = data.split("-", 3)[2]
         if str(message.from_user.id) != str(userid):
             return await message.reply_text(
-                text="<b>Invalid link or Expired link !</b>",
+                text="<b>Invalid link or Expired link❗️❗️</b>",
                 protect_content=True
             )
         is_valid = await check_token(client, userid, token)
@@ -341,7 +341,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('💝✦Jᴏɪɴ Oᴜʀ Mᴏᴠɪᴇs Gʀᴏᴜᴘ✦', url='@Move_Download)
+            InlineKeyboardButton('💝✦Jᴏɪɴ Oᴜʀ Mᴏᴠɪᴇs Gʀᴏᴜᴘ✦', url='https://t.me/Move_Download)
         ],[
             InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/UniformHelp'),
             InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://UniformHelp')
