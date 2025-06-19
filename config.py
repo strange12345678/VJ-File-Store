@@ -23,7 +23,7 @@ API_HASH = environ.get("API_HASH", "43b9c57bd7daba8a3c2a49e4b7149156")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
 PICS = (environ.get('PICS', 'https://envs.sh/AH.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8072927810').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "Forgehub_bot") # without @
 PORT = environ.get("PORT", "8080")
 
